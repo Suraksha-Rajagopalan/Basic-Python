@@ -54,6 +54,8 @@ def check_letter(chosen_letter,hidden_word, tries, matches):
     if chosen_letter in hidden_word and chosen_letter in correct_letters:
         correct_letters.append(chosen_letter)
         matches += 1
+    elif chosen_letter in hidden_word and chosen_letter in correct_letters:
+        print("You have entered the same letter. Try a different letter")
     else:
         incorrect_letters.append(chosen_letter)
         tries-=1
