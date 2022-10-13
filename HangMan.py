@@ -51,7 +51,7 @@ def show_new_board(chosen_word):
 
 def check_letter(chosen_letter,hidden_word, tries, matches):
     end = False
-    if chosen_letter in correct_letters:
+    if chosen_letter in hidden_word and chosen_letter in correct_letters:
         correct_letters.append(chosen_letter)
         matches += 1
     else:
