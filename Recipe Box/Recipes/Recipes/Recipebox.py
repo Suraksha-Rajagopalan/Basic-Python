@@ -9,7 +9,7 @@ def recipe_path():
     return type_recipe, food_you_want
 
 def open_path(a, b):
-    base_dir = "F:\\Personal Files\\Recipe Box\\Recipes\\Recipes\\"
+    base_dir = #<file base path>
     file_path = Path(base_dir+a+"\\"+b+".txt")
     return file_path
 
